@@ -1,0 +1,45 @@
+@import "./shared/variables.scss";
+@import "../../public/fonts/san-francisco-pro/stylesheet.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  scrollbar-width: thin;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "SfPro";
+  color: $color;
+  background-color: $main-background-color;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+
+.container {
+  width: $container-width;
+  max-width: $max-width-container;
+  margin: 0 auto;
+
+  @media (max-width: $mobile) {
+    width: $container-width-mobile;
+  }
+}
+a {
+  color: $white;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}

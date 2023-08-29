@@ -1,0 +1,17 @@
+//VIEWPORTS
+$tablet: 992px;
+$small-tablet: 768px;
+$mobile: 576px;
+
+//Colors
+$color: #1a1a1a;
+$white: white;
+$main-background-color: #fafafa;
+
+//SIZES
+$max-width-container: 1320px;
+
+$container-side-distance: 40px;
+$container-side-distance-mobile: 24px;
+$container-width: calc(100% - calc(2 * $container-side-distance));
+$container-width-mobile: calc(100% - calc(2 * $container-side-distance-mobile));
