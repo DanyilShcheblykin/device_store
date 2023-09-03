@@ -11,7 +11,7 @@ import AppleIcon from "../../../../public/assets/home/header/apple-icon.svg";
 
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <header className={`container ${styles.header}`}>
       <HeaderNavigation></HeaderNavigation>
       <div className={styles.searchBlock}>
         <div className={styles.headerIcon}>

@@ -1,0 +1,16 @@
+{
+    "footerData":{
+        "copyright":"  Copyright © 2023 Apple Inc. All rights reserved.",
+        "headerNavigation":
+        [
+            { "label": "Privacy Policy", "href": "/" },
+            { "label": "Terms of Use", "href": "/" },
+            { "label": "Sales and Refunds", "href": "/" },
+            { "label": "Legal", "href": "/" },
+            { "label": "Site Map", "href": "/" }
+    
+        ],
+        "language":"USA, English"
+    }
+   
+}

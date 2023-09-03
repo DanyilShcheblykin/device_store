@@ -7,7 +7,7 @@ import IntoductionImage from "../../../../public/assets/home/intoduction/virtual
 
 const Introduction = () => {
   return (
-    <section className={styles.introductionSection}>
+    <section className={`container ${styles.introductionSection}`}>
       <div className={styles.introduction}>
         <div className={styles.introductionTitle}>
           <div className={styles.titleBlock}>
