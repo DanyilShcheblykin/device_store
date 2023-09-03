@@ -4,10 +4,10 @@ import Image from "next/image";
 import styles from "./header.module.scss";
 import HeaderButton from "../header-button";
 import HeaderNavigation from "../header-navigation";
-import SearchIcon from "../../../../public/assets/header/search-icon.svg";
-import BasketIcon from "../../../../public/assets/header/basket-icon.svg";
-import ProfileIcon from "../../../../public/assets/header/profile-icon.svg";
-import AppleIcon from "../../../../public/assets/header/apple-icon.svg";
+import SearchIcon from "../../../../public/assets/home/header/search-icon.svg";
+import BasketIcon from "../../../../public/assets/home/header/basket-icon.svg";
+import ProfileIcon from "../../../../public/assets/home/header/profile-icon.svg";
+import AppleIcon from "../../../../public/assets/home/header/apple-icon.svg";
 
 const Header = () => {
   return (
