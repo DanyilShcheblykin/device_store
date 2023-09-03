@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  justify-content: space-between;
+
+  .searchBlock {
+    display: flex;
+    .headerIcon {
+      margin-right: 125px;
+    }
+    .searchInputBlock {
+      position: relative;
+      margin-right: 24px;
+
+      .searchIcon {
+        position: absolute;
+        left: 16px;
+        top: 11px;
+        z-index: 1;
+      }
+      .searchInput {
+        max-width: 244px;
+        padding: 0px 52px;
+        height: 100%;
+        border-radius: 12px;
+        border: 1px solid #fff;
+        background: rgba(255, 255, 255, 0.36);
+        &::placeholder {
+          color: #181818;
+        }
+      }
+    }
+  }
+}

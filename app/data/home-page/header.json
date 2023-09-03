@@ -1,0 +1,9 @@
+{
+    "headerNavigation":
+    [
+        { "label": "Home", "href": "/" },
+        { "label": "Products", "href": "/products" },
+        { "label": "Entertainment", "href": "/entertainment" },
+        { "label": "Support", "href": "/support" }
+    ]
+}

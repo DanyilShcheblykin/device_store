@@ -1,0 +1,25 @@
+.arrowLink,
+.link {
+  color: #464646;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 24px;
+  display: inline-block;
+  white-space: nowrap;
+}
+.activeLink {
+  color: #181818;
+}
+.arrowLink::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  margin-bottom: 2px;
+  height: 8px;
+  margin-left: 12px;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  transform: rotate(135deg);
+}
