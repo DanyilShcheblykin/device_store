@@ -1,11 +1,26 @@
 import React from "react";
 import styles from "./footer.module.scss";
-import Link from "next/link";
-import Globe from "../../../../public/assets/layout/globe.svg";
-import Image from "next/image";
 import footerInfo from "../../../data/home-page/footer.json";
+import FoterNavigationBlock from "../footer-navigation-block";
+import FooterPolicy from "../footer-policy";
 
-interface FooterLink {
+interface FooterNaviagtionItem {
+  title: string;
+  subTitlesArray: Array<string>;
+}
+
+interface FooterNavigation {
+  shopLearn: FooterNaviagtionItem;
+  appleStore: FooterNaviagtionItem;
+  forBusiness: FooterNaviagtionItem;
+  forEducation: FooterNaviagtionItem;
+  forHealthcare: FooterNaviagtionItem;
+  entertainment: FooterNaviagtionItem;
+  appleWallet: FooterNaviagtionItem;
+  account: FooterNaviagtionItem;
+}
+
+export interface FooterLink {
   label: string;
   href: string;
 }
@@ -14,41 +29,51 @@ interface FooterData {
   copyright: string;
   headerNavigation: Array<FooterLink>;
   language: string;
+  footerNavigation: FooterNavigation;
 }
 
 const Footer = () => {
-  const { copyright, headerNavigation, language }: FooterData =
-    footerInfo.footerData;
+  const {
+    copyright,
+    headerNavigation,
+    language,
+    footerNavigation,
+  }: FooterData = footerInfo.footerData;
+
+  const {
+    shopLearn,
+    appleStore,
+    forBusiness,
+    forEducation,
+    forHealthcare,
+    entertainment,
+    appleWallet,
+    account,
+  } = footerNavigation;
 
   return (
     <footer className={`container ${styles.footerSection}`}>
-      <div className={styles.footerBlock}>
-        <div>
-          <span className={styles.text}>{copyright}</span>
-          <div className={styles.footerMenu}>
-            {headerNavigation.map((linkData: FooterLink, index: number) => (
-              <FooterLink
-                key={`footer-link-${index}`}
-                {...linkData}
-              ></FooterLink>
-            ))}
-          </div>
+      <div className={styles.footerNavigation}>
+        <FoterNavigationBlock {...shopLearn}></FoterNavigationBlock>
+        <FoterNavigationBlock {...appleStore}></FoterNavigationBlock>
+        <div className={styles.extraNavigationBlock}>
+          <FoterNavigationBlock {...forBusiness}></FoterNavigationBlock>
+          <FoterNavigationBlock {...forEducation}></FoterNavigationBlock>
+          <FoterNavigationBlock {...forHealthcare}></FoterNavigationBlock>
         </div>
-        <div className={styles.languageBlock}>
-          <Image alt="globe" src={Globe}></Image>
-          <span className={styles.language}>{language}</span>
+        <FoterNavigationBlock {...entertainment}></FoterNavigationBlock>
+        <div className={styles.extraNavigationBlock}>
+          <FoterNavigationBlock {...appleWallet}></FoterNavigationBlock>
+          <FoterNavigationBlock {...account}></FoterNavigationBlock>
         </div>
       </div>
+      <FooterPolicy
+        copyrightText={copyright}
+        headerNavigation={headerNavigation}
+        language={language}
+      ></FooterPolicy>
     </footer>
   );
 };
 
 export default Footer;
-
-const FooterLink = ({ href, label }: FooterLink) => {
-  return (
-    <Link href={href}>
-      <span className={styles.menuLink}>{label}</span>
-    </Link>
-  );
-};

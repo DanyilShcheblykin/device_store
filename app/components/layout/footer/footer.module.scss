@@ -1,58 +1,11 @@
 .footerSection {
-  border-top: 1px solid #d1d1d1;
   padding: 60px 0;
 }
 
-.footerBlock {
+.footerNavigation {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-
-  .text {
-    margin-right: 40px;
-    color: #1a1a1a;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-  }
-  .footerMenu {
-    display: flex;
-    .menuLink {
-      color: #464646;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      margin-right: 32px;
-      position: relative;
-    }
-    .menuLink::after {
-      content: "";
-      background: #d1d1d1;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      display: inline-block;
-      width: 1px;
-      height: 24px;
-      margin-left: 16px;
-      right: -16px;
-    }
-  }
-  .languageBlock {
-    display: flex;
-    align-items: center;
-    img {
-      margin-right: 10px;
-    }
-    .language {
-      margin-right: 10px;
-      color: #464646;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 22px;
-    }
-  }
+  margin-bottom: 48px;
 }
 
 .footerBlock div:first-child {
@@ -60,14 +13,10 @@
   align-items: center;
 }
 
-.language::after {
-  content: "";
-  display: inline-block;
-  width: 6px;
-  margin-bottom: 4px;
-  height: 6px;
-  margin-left: 10px;
-  border-right: 1px solid black;
-  border-top: 1px solid black;
-  transform: rotate(135deg);
+.extraNavigationBlock {
+  display: flex;
+  flex-direction: column;
+  & > div:not(:last-child) {
+    margin-bottom: 57px;
+  }
 }

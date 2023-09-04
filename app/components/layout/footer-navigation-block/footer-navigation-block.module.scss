@@ -1,0 +1,18 @@
+.navigationBlock {
+    display: flex;
+    flex-direction: column;
+    .title {
+      color: #1a1a1a;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      margin-bottom: 17px;
+    }
+    .subTitle:not(:last-child) {
+      color: #464646;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      margin-bottom: 25px;
+    }
+  }
