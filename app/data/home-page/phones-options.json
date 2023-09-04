@@ -1,0 +1,16 @@
+{
+  "phones-options-data": {
+    "title": "Get your <span>iPhone</span>",
+    "allProducts": "SeeAll",
+    "phonesInfo": [
+      {
+        "phoneName": "iPhone 14 pro",
+        "price": "999",
+        "imageUrl": "iphone-pro-14.png"
+      },
+      { "phoneName": "iPhone 14", "price": "799", "imageUrl": "iphone-14.png" },
+      { "phoneName": "iPhone 13", "price": "599", "imageUrl": "iphone-13.png" },
+      { "phoneName": "iPhone 12", "price": "599", "imageUrl": "iphone-12.png" }
+    ]
+  }
+}

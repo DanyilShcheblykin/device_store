@@ -1,0 +1,48 @@
+.phonesSection {
+  padding-top: 42px;
+  background-size: 100% 235px;
+  background-repeat: no-repeat;
+  background-image: url("../../../../public/assets/home/phones-options/phones-background.jpg");
+  margin-bottom: 80px;
+  .phonesOptions {
+    .allPhones {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .title {
+        color: #181818;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        span{
+          font-weight: 600;
+        }
+      }
+
+      .checkAllPhones {
+        display: flex;
+        align-items: center;
+        .link {
+          color: #181818;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          margin-right: 10px;
+        }
+      }
+    }
+    .phones {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 53px;
+      @media (max-width:1300px) {
+        flex-wrap: wrap;
+        &>div{
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

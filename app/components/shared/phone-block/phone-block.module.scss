@@ -1,0 +1,42 @@
+.phonesBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 6px 24px -8px rgba(0, 0, 0, 0.06);
+  padding: 24px;
+  .titleBlock {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+  }
+  .title {
+    margin-bottom: 12px;
+    color: #1a1a1a;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .subTitle {
+    color: #1a1a1a;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .details {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    margin-top: 230px;
+    align-self: flex-end;
+    width: 140px;
+    height: 48px;
+    border-radius: 12px;
+    border: 1px solid #fff;
+    background: #181818;
+    box-shadow: 0px 4px 24px -4px rgba(0, 0, 0, 0.16);
+    padding: 0 24px;
+    color: white;
+  }
+}
