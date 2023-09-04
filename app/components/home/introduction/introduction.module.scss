@@ -19,11 +19,7 @@
   .introductionTitle {
     display: flex;
     flex-direction: column;
-    .titleBlock {
-      display: flex;
-      align-items: center;
-      margin-bottom: 24px;
-    }
+   
     h1 {
       line-height: 24px;
       font-size: 48px;
@@ -57,13 +53,4 @@
   @media (max-width: 1300px) {
     margin: 125px auto 300px auto;
   }
-}
-
-.titleFirstImage {
-  width: 193px;
-  height: 57px;
-}
-.titleSecondImage {
-  width: 151px;
-  height: 57px;
 }

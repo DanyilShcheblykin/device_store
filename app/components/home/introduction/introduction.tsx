@@ -1,44 +1,38 @@
 import React from "react";
 import styles from "./introduction.module.scss";
 import Image from "next/image";
-import FirstOject from "../../../../public/assets/home/intoduction/object-1.png";
-import SecondOject from "../../../../public/assets/home/intoduction/object-2.png";
-import IntoductionImage from "../../../../public/assets/home/intoduction/virtual-glasses.png";
+import IntoductionImage from "../../../../public/assets/home/introduction/virtual-glasses.png";
+import introductionInfo from "../../../data/home-page/introduction.json";
+import IntroductionTitleBlock from "./introduction-title-block";
+
+export interface IntroductionTitle {
+  title: string;
+  imageWidth?:number;
+  rowReverse:boolean;
+  imageUrl: string;
+}
 
 const Introduction = () => {
+  const { introductionTitleArray, subTitle, buttonText } =
+    introductionInfo.introductionData;
+
   return (
     <section className={`container ${styles.introductionSection}`}>
       <div className={styles.introduction}>
         <div className={styles.introductionTitle}>
-          <div className={styles.titleBlock}>
-            <h1> Elevating Life</h1>
-            <Image
-              className={styles.titleFirstImage}
-              alt="text-image"
-              src={FirstOject}
-            ></Image>
-          </div>
-          <div className={styles.titleBlock}>
-            <h1> To Pro-Level Precision</h1>
-          </div>
-          <div className={styles.titleBlock}>
-            <Image
-              className={styles.titleSecondImage}
-              alt="text-image"
-              src={SecondOject}
-            ></Image>
-            <h1> with Vision Pro</h1>
-          </div>
+          {introductionTitleArray.map(
+            (introductionItem: IntroductionTitle, index: number) => (
+              <IntroductionTitleBlock
+                key={`introduction-block-${index}`}
+                {...introductionItem}
+              ></IntroductionTitleBlock>
+            )
+          )}
         </div>
         <div className={styles.introductionSubTitle}>
-          <span>
-            With Vision Pro, you have an infinite canvas that transforms how you
-            use the apps you love. Arrange apps anywhere and scale them to the
-            perfect size, making the workspace of your dreams a reality — all
-            while staying present in the world around you
-          </span>
+          <span>{subTitle}</span>
         </div>
-        <button className={styles.orderNow}>Pre-Order Now</button>
+        <button className={styles.orderNow}>{buttonText}</button>
       </div>
       <Image
         className={styles.intoductionImage}
