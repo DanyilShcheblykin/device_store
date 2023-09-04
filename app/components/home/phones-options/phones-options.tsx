@@ -4,10 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import Arrow from "../../../../public/assets/home/phones-options/arrow-right.svg";
 import phoneData from "../../../data/home-page/phones-options.json";
-import PhoneBlock from "../../shared/phone-block";
+import DeviceBlock from "../../shared/phone-block";
 
-export interface PhoneBlockModel {
-  phoneName: string;
+export interface DeviceBlockModel {
+  deviceName: string;
   price: string;
   imageUrl: string;
 }
@@ -15,8 +15,10 @@ export interface PhoneBlockModel {
 interface PhonesOptionsData {
   title: string;
   allProducts: string;
-  phonesInfo: Array<PhoneBlockModel>;
+  phonesInfo: Array<DeviceBlockModel>;
 }
+
+const IMAGE_HREF = "/assets/home/phones-options/"
 
 const PhonesOptions = () => {
   const { title, allProducts, phonesInfo }: PhonesOptionsData =
@@ -38,8 +40,8 @@ const PhonesOptions = () => {
           </Link>
         </div>
         <div className={styles.phones}>
-          {phonesInfo.map((phoneInfo: PhoneBlockModel, index: number) => (
-            <PhoneBlock key={`phone-info-${index}`} {...phoneInfo}></PhoneBlock>
+          {phonesInfo.map((phoneInfo: DeviceBlockModel, index: number) => (
+            <DeviceBlock imagesFileLocation={IMAGE_HREF} key={`phone-info-${index}`} {...phoneInfo}></DeviceBlock>
           ))}
         </div>
       </div>

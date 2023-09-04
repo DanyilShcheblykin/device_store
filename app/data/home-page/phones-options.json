@@ -4,13 +4,21 @@
     "allProducts": "SeeAll",
     "phonesInfo": [
       {
-        "phoneName": "iPhone 14 pro",
+        "deviceName": "iPhone 14 pro",
         "price": "999",
         "imageUrl": "iphone-pro-14.png"
       },
-      { "phoneName": "iPhone 14", "price": "799", "imageUrl": "iphone-14.png" },
-      { "phoneName": "iPhone 13", "price": "599", "imageUrl": "iphone-13.png" },
-      { "phoneName": "iPhone 12", "price": "599", "imageUrl": "iphone-12.png" }
+      {
+        "deviceName": "iPhone 14",
+        "price": "799",
+        "imageUrl": "iphone-14.png"
+      },
+      {
+        "deviceName": "iPhone 13",
+        "price": "599",
+        "imageUrl": "iphone-13.png"
+      },
+      { "deviceName": "iPhone 12", "price": "599", "imageUrl": "iphone-12.png" }
     ]
   }
 }

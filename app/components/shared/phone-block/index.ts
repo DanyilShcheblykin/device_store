@@ -1,2 +1,2 @@
-import PhoneBlock from "./phone-block";
-export default PhoneBlock
+import DeviceBlock from "./device-block";
+export default DeviceBlock

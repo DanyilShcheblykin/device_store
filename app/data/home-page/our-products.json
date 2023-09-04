@@ -1,0 +1,53 @@
+{
+  "our-products": {
+    "title": " Explore in <span>Products</span>",
+    "productsMenu": [
+      "All",
+      "Iphone",
+      "IPad",
+      "Mack",
+      "Watch",
+      "Vivion",
+      "AirPods",
+      "TV & Home",
+      "Entertainment",
+      "Accessory"
+    ],
+    "products": [
+      [
+        {
+          "deviceName": "Apple watch",
+          "price": "399",
+          "imageUrl": "apple-watch.png"
+        },
+        {
+          "deviceName": "Mack Book Air 15",
+          "price": "1299",
+          "imageUrl": "mack-book-air-15.png"
+        },
+        {
+          "deviceName": "Iphone 12",
+          "price": "599",
+          "imageUrl": "iphone-12.png"
+        },
+        {
+          "deviceName": "AirPods 3rd Ge",
+          "price": "179",
+          "imageUrl": "air-pods-3.png"
+        },
+        { "deviceName": "HomePod", "price": "299", "imageUrl": "home-pod.png" },
+        {
+          "deviceName": "Iphone 13",
+          "price": "599",
+          "imageUrl": "iphone-13.png"
+        },
+        {
+          "deviceName": "Apple TV 4k",
+          "price": "129",
+          "imageUrl": "apple-tv.png"
+        },
+        { "deviceName": "Ipad Pro", "price": "749", "imageUrl": "ipad-pro.png" }
+      ]
+    ]
+  }
+}

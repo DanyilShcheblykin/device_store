@@ -1,4 +1,4 @@
-.phonesBlock {
+.deviceBlock {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -6,6 +6,8 @@
   background: #fff;
   box-shadow: 0px 6px 24px -8px rgba(0, 0, 0, 0.06);
   padding: 24px;
+  margin-bottom: 20px;
+
   .titleBlock {
     position: absolute;
     top: 24px;

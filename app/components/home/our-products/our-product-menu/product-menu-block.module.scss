@@ -1,0 +1,23 @@
+.optionBlock {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  border-radius: 36px;
+  border: 1px solid #464646;
+  box-shadow: 0px 4px 24px -4px rgba(0, 0, 0, 0.16);
+  width: fit-content;
+  padding: 0 24px;
+  color: #181818;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+.activeOptionBlock {
+  border: 1px solid #464646;
+  background: #181818;
+  color: #e8e8e8;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+}
