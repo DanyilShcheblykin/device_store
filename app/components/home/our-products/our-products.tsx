@@ -36,8 +36,9 @@ const OurProducts = () => {
           dangerouslySetInnerHTML={{ __html: title }}
         ></h1>
         <div className={styles.productsOptions}>
-          {productsMenu.map((productName, index) => (
+          {productsMenu.map((productName:string, index: number) => (
             <OurProductMenuBlock
+              key={`our-product-${index}`}
               productName={productName}
               activeMenu={index === activeProducts}
               index={index}

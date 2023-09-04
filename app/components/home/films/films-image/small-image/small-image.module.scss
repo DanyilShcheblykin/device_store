@@ -1,0 +1,16 @@
+.filmsBlock {
+    position: relative;
+    .filmName {
+      display: inline-block;
+      width: 300px;
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    }
+  }

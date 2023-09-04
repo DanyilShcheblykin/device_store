@@ -1,0 +1,64 @@
+.filmsBlock {
+  position: relative;
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  .title {
+    margin-bottom: 12px;
+    color: #1a1a1a;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .subTitle {
+    color: #1a1a1a;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+
+.streamButtonBlock {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  .streamButton {
+    color: #e8e8e8;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 12px;
+    border: 1px solid #fff;
+    background: #181818;
+    height: 48px;
+    width: 176px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+}
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 8px solid #181818;
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  transform: rotate(90deg);
+}

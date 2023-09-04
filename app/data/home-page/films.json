@@ -1,0 +1,19 @@
+{
+    "filmsData":[
+        {
+            "imageUrl":"silo.jpg" , "filmName":"silo"
+        },
+        {
+            "imageUrl":"platonic.jpg" , "filmName":"platonic"
+        },
+        {
+            "imageUrl":"hijac.png" , "filmName":"HIJAC"
+        },
+        {
+            "imageUrl":"crodwen-room.jpg" , "filmName":"crodwen-room"
+        },
+        {
+            "imageUrl":"swager.jpg" , "filmName":"swager"
+        }
+    ]
+}
