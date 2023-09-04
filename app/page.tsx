@@ -1,3 +1,4 @@
+import ExtraInformation from "./components/home/extra-information/extra-information";
 import Films from "./components/home/films";
 import Introduction from "./components/home/introduction";
 import OurProducts from "./components/home/our-products";
@@ -12,6 +13,7 @@ export default function Home() {
         <PhonesOptions></PhonesOptions>
         <OurProducts></OurProducts>
         <Films></Films>
+        <ExtraInformation></ExtraInformation>
       </Layout>
     </main>
   );
