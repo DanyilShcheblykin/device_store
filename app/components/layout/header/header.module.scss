@@ -22,7 +22,7 @@
         z-index: 1;
       }
       .searchInput {
-        max-width: 344px;
+        width: 344px;
         padding: 0px 52px;
         height: 100%;
         border-radius: 12px;
@@ -32,6 +32,18 @@
           color: #181818;
         }
       }
+      @media (max-width:1200px) {
+        .searchInput{
+        width: 240px;
+          
+        }
+      }
+    }
+    @media (max-width:1200px) {
+      .headerIcon{
+        margin-right: 40px;
+      }
     }
   }
+ 
 }

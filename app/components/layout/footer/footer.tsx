@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./footer.module.scss";
 import footerInfo from "../../../data/home-page/footer.json";
-import FoterNavigationBlock from "../footer-navigation-block";
+import FooterNavigationBlock from "../footer-navigation-block";
 import FooterPolicy from "../footer-policy";
 
 interface FooterNaviagtionItem {
@@ -54,17 +54,17 @@ const Footer = () => {
   return (
     <footer className={`container ${styles.footerSection}`}>
       <div className={styles.footerNavigation}>
-        <FoterNavigationBlock {...shopLearn}></FoterNavigationBlock>
-        <FoterNavigationBlock {...appleStore}></FoterNavigationBlock>
+        <FooterNavigationBlock {...shopLearn}></FooterNavigationBlock>
+        <FooterNavigationBlock {...appleStore}></FooterNavigationBlock>
         <div className={styles.extraNavigationBlock}>
-          <FoterNavigationBlock {...forBusiness}></FoterNavigationBlock>
-          <FoterNavigationBlock {...forEducation}></FoterNavigationBlock>
-          <FoterNavigationBlock {...forHealthcare}></FoterNavigationBlock>
+          <FooterNavigationBlock {...forBusiness}></FooterNavigationBlock>
+          <FooterNavigationBlock {...forEducation}></FooterNavigationBlock>
+          <FooterNavigationBlock {...forHealthcare}></FooterNavigationBlock>
         </div>
-        <FoterNavigationBlock {...entertainment}></FoterNavigationBlock>
+        <FooterNavigationBlock {...entertainment}></FooterNavigationBlock>
         <div className={styles.extraNavigationBlock}>
-          <FoterNavigationBlock {...appleWallet}></FoterNavigationBlock>
-          <FoterNavigationBlock {...account}></FoterNavigationBlock>
+          <FooterNavigationBlock {...appleWallet}></FooterNavigationBlock>
+          <FooterNavigationBlock {...account}></FooterNavigationBlock>
         </div>
       </div>
       <FooterPolicy

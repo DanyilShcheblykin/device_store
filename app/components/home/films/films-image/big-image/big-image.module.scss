@@ -1,5 +1,8 @@
 .filmsBlock {
   position: relative;
+  @media (max-width:1350px) {
+    margin: 0 auto;
+  }
 }
 
 .titleBlock {

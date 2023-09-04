@@ -8,11 +8,13 @@
       font-weight: 600;
       margin-bottom: 17px;
     }
+    .subTitle{
+        color: #464646;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+    }
     .subTitle:not(:last-child) {
-      color: #464646;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
       margin-bottom: 25px;
     }
   }

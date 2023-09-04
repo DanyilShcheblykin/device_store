@@ -1,2 +1,2 @@
-import FoterNavigationBlock from "./footer-navigation-block";
-export default FoterNavigationBlock
+import FooterNavigationBlock from "./footer-navigation-block";
+export default FooterNavigationBlock

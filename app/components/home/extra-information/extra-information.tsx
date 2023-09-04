@@ -8,13 +8,13 @@ const ExtraInformation = () => {
   return (
     <section className={styles.extraInformationSection}>
       <div className="container">
-        <Link href="/">
-          <div className={styles.links}>
-            {links.map((linkText, index) => (
+        <div className={styles.links}>
+          {links.map((linkText:string, index:number) => (
+            <Link key={`link-text-${index}`} href="/">
               <div className={styles.linkBlock}>{linkText}</div>
-            ))}
-          </div>
-        </Link>
+            </Link>
+          ))}
+        </div>
       </div>
     </section>
   );
