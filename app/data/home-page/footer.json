@@ -9,81 +9,106 @@
       { "label": "Site Map", "href": "/" }
     ],
     "language": "USA, English",
-    "footerNavigation": {
-      "shopLearn": {
-        "title": "Shop & Learn",
-        "subTitlesArray": [
-          "Store",
-          "Mak",
-          "Ipad",
-          "iPhone",
-          "Watch",
-          "Vision",
-          "AirPods",
-          "TV & Home",
-          "AitTag",
-          "Accessories",
-          "Gift Cards"
+    "footerNavigation": [
+      {
+        "columnArray": [
+          {
+            "title": "Shop & Learn",
+            "subTitlesArray": [
+              "Store",
+              "Mak",
+              "Ipad",
+              "iPhone",
+              "Watch",
+              "Vision",
+              "AirPods",
+              "TV & Home",
+              "AitTag",
+              "Accessories",
+              "Gift Cards"
+            ]
+          }
         ]
       },
-      "appleStore": {
-        "title": "Apple Store",
-        "subTitlesArray": [
-          "Find a Store",
-          "Genius Bar",
-          "Today at Apple",
-          "Apple Camp",
-          "Apple Store App",
-          "Certified Refurbished",
-          "Apple Trade In",
-          "Financing",
-          "Carrier Deals at Apple",
-          "Order Status",
-          "Shopping Help"
+      {
+        "columnArray": [
+          {
+            "title": "Apple Store",
+            "subTitlesArray": [
+              "Find a Store",
+              "Genius Bar",
+              "Today at Apple",
+              "Apple Camp",
+              "Apple Store App",
+              "Certified Refurbished",
+              "Apple Trade In",
+              "Financing",
+              "Carrier Deals at Apple",
+              "Order Status",
+              "Shopping Help"
+            ]
+          }
         ]
       },
-      "forBusiness": {
-        "title": "For Business",
-        "subTitlesArray": ["Apple and Buisness", "Shop for Buisness"]
-      },
-      "forEducation": {
-        "title": "For Education",
-        "subTitlesArray": ["Apple and Education", "Shop for K-12"]
-      },
-      "forHealthcare": {
-        "title": "For Healthcare",
-        "subTitlesArray": [
-          "Apple in Healthcare",
-          "Health on Apple Watch",
-          "Health Records on Iphone"
+      {
+        "columnArray": [
+          {
+            "title": "For Business",
+            "subTitlesArray": ["Apple and Buisness", "Shop for Buisness"]
+          },
+          {
+            "title": "For Education",
+            "subTitlesArray": ["Apple and Education", "Shop for K-12"]
+          },
+          {
+            "title": "For Healthcare",
+            "subTitlesArray": [
+              "Apple in Healthcare",
+              "Health on Apple Watch",
+              "Health Records on Iphone"
+            ]
+          }
         ]
       },
-      "entertainment": {
-        "title": "For Healthcare",
-        "subTitlesArray": [
-          "Apple one",
-          "Apple TV+",
-          "Apple Music",
-          "Apple Arcade",
-          "Apple Fitness+",
-          "Apple News+",
-          "Apple Podcasts",
-          "Apple Books",
-          "App Store"
+      {
+        "columnArray": [
+          {
+            "title": "Entertainment",
+            "subTitlesArray": [
+              "Apple one",
+              "Apple TV+",
+              "Apple Music",
+              "Apple Arcade",
+              "Apple Fitness+",
+              "Apple News+",
+              "Apple Podcasts",
+              "Apple Books",
+              "App Store"
+            ]
+          }
         ]
       },
-      "appleWallet": {
-        "title": "Apple Wallet",
-        "subTitlesArray": ["Wallet", "Apple Card", "Apple Pay", "Apple Cash"]
-      },
-      "account": {
-        "title": "Account",
-        "subTitlesArray": [
-          "Manage Your Apple ID",
-          "Apple Store Account",
-          "ICloud.com"
+      {
+        "columnArray": [
+          {
+            "title": "Apple Wallet",
+            "subTitlesArray": [
+              "Wallet",
+              "Apple Card",
+              "Apple Pay",
+              "Apple Cash"
+            ]
+          },
+          {
+            "title": "Account",
+            "subTitlesArray": [
+              "Manage Your Apple ID",
+              "Apple Store Account",
+              "ICloud.com"
+            ]
+          }
         ]
       }
-    }
+    ]
   }
 }

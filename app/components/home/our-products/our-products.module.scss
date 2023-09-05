@@ -10,8 +10,8 @@
   flex-direction: column;
   .title {
     text-align: center;
-    span{
-        font-weight: 600;
+    span {
+      font-weight: 600;
     }
   }
   .productsOptions {
@@ -19,14 +19,17 @@
     margin-top: 24px;
     display: flex;
     justify-content: space-between;
-    @media (max-width:1100px) {
-        flex-wrap: wrap;
-        justify-content: initial;
+    @media (max-width: 1100px) {
+      flex-wrap: wrap;
+      justify-content: initial;
     }
   }
-  .devices{
+  .devices {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media (max-width: 700px) {
+      justify-content: center;
+    }
   }
 }

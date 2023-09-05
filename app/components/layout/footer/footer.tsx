@@ -4,20 +4,13 @@ import footerInfo from "../../../data/home-page/footer.json";
 import FooterNavigationBlock from "../footer-navigation-block";
 import FooterPolicy from "../footer-policy";
 
-interface FooterNaviagtionItem {
+interface FooterColumn {
   title: string;
-  subTitlesArray: Array<string>;
+  subTitlesArray: string[];
 }
 
 interface FooterNavigation {
-  shopLearn: FooterNaviagtionItem;
-  appleStore: FooterNaviagtionItem;
-  forBusiness: FooterNaviagtionItem;
-  forEducation: FooterNaviagtionItem;
-  forHealthcare: FooterNaviagtionItem;
-  entertainment: FooterNaviagtionItem;
-  appleWallet: FooterNaviagtionItem;
-  account: FooterNaviagtionItem;
+  columnArray: FooterColumn[];
 }
 
 export interface FooterLink {
@@ -25,11 +18,11 @@ export interface FooterLink {
   href: string;
 }
 
-interface FooterData {
+export interface FooterData {
   copyright: string;
-  headerNavigation: Array<FooterLink>;
+  headerNavigation: FooterLink[];
   language: string;
-  footerNavigation: FooterNavigation;
+  footerNavigation: FooterNavigation[];
 }
 
 const Footer = () => {
@@ -40,32 +33,22 @@ const Footer = () => {
     footerNavigation,
   }: FooterData = footerInfo.footerData;
 
-  const {
-    shopLearn,
-    appleStore,
-    forBusiness,
-    forEducation,
-    forHealthcare,
-    entertainment,
-    appleWallet,
-    account,
-  } = footerNavigation;
-
   return (
     <footer className={`container ${styles.footerSection}`}>
       <div className={styles.footerNavigation}>
-        <FooterNavigationBlock {...shopLearn}></FooterNavigationBlock>
-        <FooterNavigationBlock {...appleStore}></FooterNavigationBlock>
-        <div className={styles.extraNavigationBlock}>
-          <FooterNavigationBlock {...forBusiness}></FooterNavigationBlock>
-          <FooterNavigationBlock {...forEducation}></FooterNavigationBlock>
-          <FooterNavigationBlock {...forHealthcare}></FooterNavigationBlock>
-        </div>
-        <FooterNavigationBlock {...entertainment}></FooterNavigationBlock>
-        <div className={styles.extraNavigationBlock}>
-          <FooterNavigationBlock {...appleWallet}></FooterNavigationBlock>
-          <FooterNavigationBlock {...account}></FooterNavigationBlock>
-        </div>
+        {footerNavigation.map((column: FooterNavigation, index: number) => (
+          <div
+            key={`footer-column-${index}`}
+            className={styles.extraNavigationBlock}
+          >
+            {column.columnArray.map((navigationItem, index) => (
+              <FooterNavigationBlock
+                key={`navigation-item-${index}`}
+                {...navigationItem}
+              ></FooterNavigationBlock>
+            ))}
+          </div>
+        ))}
       </div>
       <FooterPolicy
         copyrightText={copyright}

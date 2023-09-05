@@ -15,7 +15,7 @@
         font-size: 36px;
         font-style: normal;
         font-weight: 400;
-        span{
+        span {
           font-weight: 600;
         }
       }
@@ -37,8 +37,11 @@
       align-items: center;
       justify-content: space-between;
       margin-top: 53px;
-      @media (max-width:1300px) {
+      @media (max-width: 1300px) {
         flex-wrap: wrap;
+      }
+      @media (max-width: 700px) {
+        justify-content: center;
       }
     }
   }

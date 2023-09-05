@@ -32,18 +32,22 @@
           color: #181818;
         }
       }
-      @media (max-width:1200px) {
-        .searchInput{
-        width: 240px;
-          
+      @media (max-width: 1200px) {
+        .searchInput {
+          width: 240px;
         }
       }
     }
-    @media (max-width:1200px) {
-      .headerIcon{
+    @media (max-width: 1200px) {
+      .headerIcon {
         margin-right: 40px;
       }
     }
   }
- 
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    .searchBlock {
+      margin-top: 15px;
+    }
+  }
 }
